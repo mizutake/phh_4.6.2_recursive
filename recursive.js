@@ -9,6 +9,9 @@ function factorial(n) {
     let x = n;
     for (let i = 1; i < x; i++) {
         n = n * (x - i);
+        if(n === 1|0){
+            n = 1;
+        }
         //console.log(i);
         //console.log(n);
     }
@@ -20,6 +23,9 @@ function factorial(n) {
     let answer = 1;
     for(let i = 0; i < n; i++) {
         answer *= (n - i);
+        if(n === 1|0){
+            answer == 1;
+        }
     }
     return answer;
 }
